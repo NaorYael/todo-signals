@@ -4,7 +4,7 @@ This is a simple Todo application built with Angular. The app allows users to ad
 
 ## Demo
 
-Check out the live demo: [Todo App Demo]([https://your-vercel-app-url.vercel.app](https://todo-signals-rn8a0ufam-naoryaels-projects.vercel.app)
+Check out the live demo: [Todo App Demo]([https://your-vercel-app-url.vercel.app](https://todo-signals-rn8a0ufam-naoryaels-projects.vercel.app))
 
 ## Features
 
