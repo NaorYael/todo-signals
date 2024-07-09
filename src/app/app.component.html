@@ -1,1 +1,16 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+<div class="todo-app">
+    <h1>Todo List</h1>
+    <div class="form-input">
+        <form [formGroup]="todoForm" (ngSubmit)="addTodo()">
+            <input formControlName="newTodoTitle" placeholder="Add a new todo" />
+            <button type="submit" [disabled]="todoForm.invalid">Add</button>
+        </form>
+    </div>
+    <ul>
+        <li *ngFor="let todo of todoService.todos">
+            <input type="checkbox" [checked]="todo.completed" (change)="toggleTodoCompleted(todo.id)" />
+            <span [class.completed]="todo.completed">{{ todo.title }}</span>
+            <button (click)="deleteTodo(todo.id)">Delete</button>
+        </li>
+    </ul>
+</div>
